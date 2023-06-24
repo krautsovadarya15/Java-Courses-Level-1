@@ -1,6 +1,6 @@
 package com.courses.Lesson_5_functions;
 
-public class Task_2 {
+public class Task_5_2 {
     public static void main(String[] args) {
         int a = 5;
         int b = 3;
