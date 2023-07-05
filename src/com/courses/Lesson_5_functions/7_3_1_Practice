@@ -1,0 +1,32 @@
+/*
+Написать программу, которая выводит значения массива сначало от начала до конца и наоборот.
+ */
+ 
+public class Task_7_2_PracticeArrays {
+    public static void main(String[] args) {
+        int [] values = {1,2,3,4,5,6,7};
+        printArray(values);
+        printReverse(values);
+        printForEach(values);
+    }
+    public static void printArray(int [] values){
+        for (int i = 0; i < values.length; i++) {
+            System.out.print(values[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public static void printReverse (int[] values){
+        for (int i = values.length - 1; i >= 0; i--) {
+            System.out.print(values[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public static void printForEach (int[] values){
+        for (int value : values) {
+            System.out.print(value + " ");
+        }
+        System.out.println();
+    }
+}
