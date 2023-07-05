@@ -1,1 +1,27 @@
+public class Task_7_1_MultiArrays {
+    public static void main(String[] args) {
+//        int[][] arrays2 = {
+//                {1,2,3},
+//                {4,5,6},
+//                {7,8,9}
+//        };
+        int [][] arrays2 = new int[5][5];
+        arrays2[0] = new int[1];
+        arrays2[1] = new int[2];
+        arrays2[2] = new int[3];
+        arrays2[3] = new int[4];
+        arrays2[4] = new int[5];
+        printArray(arrays2);
 
+    }
+
+    private static void printArray(int[][] arrays2) {
+        for (int i = 0; i < arrays2.length; i++) {
+            int[] array1 = arrays2[i];
+            for (int j = 0; j < array1.length; j++) {
+                System.out.print(array1[j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
